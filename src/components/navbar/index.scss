@@ -1,5 +1,5 @@
 .navbar {
-  @apply bg-brand-primary flex justify-between items-center border border-brand-black;
+  @apply bg-brand-primary flex justify-between items-center border border-brand-secondary;
   @apply md:rounded-[100px] md:mx-20 md:h-14;
 
   &__right {
@@ -10,7 +10,7 @@
       @apply mr-7 pb-4;
       
       &:hover {
-        @apply border-b-2;
+        @apply border-b-2 border-white;
       }
     }
   }
@@ -22,12 +22,24 @@
     &-item {
       @apply ml-7 flex items-center;
 
+      span {
+        @apply mr-2;
+      }
+
       img {
-        @apply h-4 w-4 ml-2;
+        @apply h-4 w-4;
       }
 
       &:last-of-type {
-        @apply border border-brand-black rounded-3xl py-1 px-2;
+        @apply border border-brand-secondary rounded-3xl py-1 px-2;
+
+        &:hover {
+          @apply border-white;
+        }
+      }
+
+      &:hover {
+        @apply text-white;
       }
     }
   }
