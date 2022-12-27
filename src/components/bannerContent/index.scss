@@ -1,0 +1,39 @@
+.banner-content {
+  @apply mx-4 mt-11 text-white;
+  @apply md:mx-[5.5rem] md:mt-12;
+
+  &__rating {
+    @apply flex mb-8;
+
+    span {
+      @apply text-xl;
+    }
+
+    img {
+      @apply ml-3;
+    }
+  }
+
+  &__title {
+    @apply font-rajdhani font-bold leading-tight;
+    @apply md:text-[5rem];
+    @apply 2xl:w-2/3;
+  }
+
+  &__subtext {
+    @apply text-[1.35rem] font-roboto font-medium pb-6;
+    @apply md:w-3/5 md:pr-6;
+  }
+
+  &__login {
+    @apply mt-3 pb-[3.25rem] text-base;
+
+    a {
+      @apply text-green ml-1;
+
+      &:hover {
+        @apply text-white cursor-pointer;
+      }
+    }
+  }
+}

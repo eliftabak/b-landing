@@ -1,0 +1,63 @@
+//Main Feature Container Styles
+.featureContainer {
+  @apply block font-roboto text-brand-black;
+  @apply md:flex md:justify-around md:mx-20 md:mt-20;
+  @apply xl:justify-between;
+
+  &__image {
+    @apply hidden;
+    @apply lg:block;
+  }
+
+  &__textarea {
+    @apply lg:w-[39rem] lg:mr-12;
+  }
+}
+
+// Feature Container Header Styles
+
+.header {
+  &__imageBox {
+    @apply lg:hidden;
+  }
+
+  &__titleBox {
+    h3 {
+      @apply font-extrabold;
+    }
+
+    p {
+      @apply text-xl mb-5 mt-2;
+    }
+
+    h2  {
+      @apply text-brand-primary font-rajdhani font-black text-4xl;
+      @apply lg:text-6xl lg:mb-6;
+    }
+  }
+}
+
+// Feature Container List Styles
+
+.list {
+  h3 {
+    @apply font-black mb-7;
+  }
+
+  &__textBox {
+    h4 {
+      @apply font-extrabold uppercase;
+    }
+  }
+
+  &__item {
+    @apply flex gap-4 mb-4;
+    @apply md:mb-6;
+  }
+
+  &__number {
+    div {
+      @apply bg-brand-primary h-6 w-6 text-center rounded-full border border-brand-black;
+    }
+  }
+}

@@ -1,0 +1,7 @@
+.button {
+  @apply py-2 px-4 text-brand-black bg-green flex items-center rounded-3xl border border-brand-black gap-2;
+
+  &:hover {
+    @apply text-white;
+  }
+}
