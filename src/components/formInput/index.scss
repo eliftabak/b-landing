@@ -1,0 +1,15 @@
+.formInput {
+  @apply flex flex-col;
+
+  input {
+    @apply border border-gray-900 rounded-3xl h-12;
+  }
+
+  input:focus {
+    @apply shadow-none;
+  }
+
+  span {
+    @apply hidden;
+  }
+}
