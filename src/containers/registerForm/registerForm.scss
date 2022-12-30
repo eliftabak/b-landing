@@ -1,0 +1,94 @@
+.registerForm {
+  @apply bg-white rounded-[40px] p-11;
+
+  &__title  {
+    @apply text-black text-xl mb-5;
+
+    h4 {
+      @apply font-black;
+    }
+  }
+
+  &__form {
+    @apply flex flex-col;
+  }
+
+  &__checkboxes {
+    &-title {
+      @apply flex items-center font-black;
+
+      .icon {
+        @apply text-brand-primary mr-[.38rem];
+      }
+    }
+
+    &-header {
+      @apply mb-1;
+    }
+
+    &-item {
+      @apply flex items-baseline border text-black-900 border-black-900 rounded-3xl py-3 px-4;
+
+      &:hover {
+        @apply bg-gray-200;
+      }
+
+      .formInput {
+        @apply mb-0 h-4 font-medium;
+
+        label {
+          @apply font-sans font-medium;
+  
+          &:hover {
+            @apply cursor-pointer;
+          }
+        }
+      }
+
+      input[type='checkbox'] {
+        @apply invisible absolute;
+      }
+
+      &-checkmark {
+        @apply ml-3;
+      }
+
+      &.-checked {
+        @apply bg-black-900 text-white;
+      }
+    }
+
+    &-container {
+      @apply flex gap-3;
+    }
+
+    &-error {
+      @apply text-xs text-red mt-1;
+    }
+  }
+
+  &__submit-btn {
+    @apply bg-green border border-black-900 py-[.65rem] rounded-3xl font-roboto font-medium mt-8;
+
+    &:hover {
+      @apply text-white;
+    }
+
+    &:active {
+      @apply bg-black-900;
+    }
+  }
+
+  &__login {
+    @apply mt-3 pb-[3.25rem] text-base flex justify-center;
+
+    p {
+      @apply text-green ml-1;
+
+      &:hover {
+        @apply text-brand-secondary cursor-pointer;
+      }
+    }
+  }
+}
+
