@@ -15,11 +15,16 @@ module.exports = {
         '900': '#1B1B1B',
       },
       'gray': {
+        '100': '#CDD2DC',
+        '200': '#DCE6E6',
         '900': '#545454',
       },
       'green': {
         DEFAULT: '#32BE50',
       },
+      'red': {
+        DEFAULT: '#DC3545',
+      }
     },
     extend: {
       fontFamily: {
