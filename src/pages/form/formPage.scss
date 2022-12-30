@@ -2,7 +2,8 @@
   @apply bg-brand-secondary pt-10 text-black-900 font-roboto pb-8;
 
   &__container {
-    @apply mx-64 mt-[3rem];
+    @apply mx-4;
+    @apply lg:mx-64 lg:mt-[3rem];
   }
 
   &__title {

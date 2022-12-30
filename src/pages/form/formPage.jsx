@@ -1,10 +1,10 @@
 import React from 'react';
-import RegisterForm from '../../containers/registerForm';
-import Navbar from '../../components/navbar';
+import RegisterForm from '../../containers/registerForm/registerForm';
+import Navbar from '../../components/navbar/navbar';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
-import './index.scss';
+import './formPage.scss';
 
 export default function RegisterFormPage() {
 
