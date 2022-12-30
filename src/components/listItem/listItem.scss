@@ -1,0 +1,27 @@
+.listItems {
+  @apply flex flex-col;
+  
+  &__item {
+    @apply mb-5 bg-white rounded-3xl p-8 border border-black-900;
+
+    h1 {
+      @apply text-xl font-black font-rajdhani mb-5;
+    }
+
+    &-row {
+      @apply flex flex-row justify-between border-b border-gray-100 py-4;
+
+      &:first-of-type {
+        @apply border-t border-gray-100;
+      }
+
+      &-key {
+        @apply font-black;
+      }
+    }
+  }
+
+  &__showmore-btn {
+    @apply p-5 my-5 text-white font-medium;
+  }
+}
