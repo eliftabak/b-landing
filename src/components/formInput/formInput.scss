@@ -1,0 +1,33 @@
+.formInput {
+  @apply flex flex-col mb-4 relative;
+  @apply lg:mb-8;
+
+  input {
+    @apply border border-gray-900 rounded-3xl h-12 p-3;
+
+    &:focus {
+      @apply outline-none;
+    }
+  }
+
+  &__label {
+    @apply mb-2 font-black font-sans;
+  }
+
+  &__icon {
+    @apply text-brand-primary mr-[.38rem];
+  }
+
+  span {
+    @apply hidden;
+  }
+
+  &__error {
+    @apply text-red text-xs mt-1;
+  }
+
+  &.-has-error:after {
+    content: '\0021';
+    @apply text-red text-base absolute right-5 top-[45%];
+  }
+}
