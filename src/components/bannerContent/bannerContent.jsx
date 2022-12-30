@@ -2,8 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import trustPilot from '../../assets/image/trustPilot.png';
 import stars from '../../assets/icon/fiveStars.png';
-import Button from '../button';
-import './index.scss';
+import Button from '../button/button';
+import './bannerContent.scss';
 
 export default function BannerContent() {
   return (
