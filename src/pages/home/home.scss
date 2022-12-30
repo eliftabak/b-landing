@@ -1,0 +1,8 @@
+.banner {
+  @apply h-full bg-cover bg-blend-multiply;
+  @apply lg:pt-10;
+  background-image: linear-gradient(
+    rgba(90, 105, 140, 0.8), 
+    rgba(90, 105, 140, 0.8)
+  ), url('../../assets/image/headerBanner.png');
+}

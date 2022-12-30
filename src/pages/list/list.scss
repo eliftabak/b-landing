@@ -1,0 +1,13 @@
+.list {
+  @apply bg-brand-secondary pt-0;
+  @apply lg:pt-10;
+
+  &__container {
+    @apply mx-4 mt-10 pb-5 font-rajdhani;
+    @apply lg:mx-64 lg:mt-12;
+
+    h2 {
+      @apply font-roboto font-black text-white text-4xl mb-5;
+    }
+  }
+}

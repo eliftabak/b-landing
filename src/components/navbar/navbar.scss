@@ -1,0 +1,46 @@
+.navbar {
+  @apply bg-brand-primary flex justify-center items-center py-3;
+  @apply lg:rounded-[100px] lg:mx-20 lg:h-14 lg:justify-between lg:border lg:border-brand-secondary;
+
+  &__right {
+    @apply hidden;
+    @apply lg:block lg:pl-6;
+
+    &-item {
+      @apply mr-7 pb-4;
+      
+      &:hover {
+        @apply border-b-2 border-white;
+      }
+    }
+  }
+
+  &__left {
+    @apply hidden;
+    @apply lg:flex lg:mr-6;
+
+    &-item {
+      @apply ml-7 flex items-center;
+
+      span {
+        @apply mr-2;
+      }
+
+      img {
+        @apply h-4 w-4;
+      }
+
+      &:last-of-type {
+        @apply border border-brand-secondary rounded-3xl py-1 px-2;
+
+        &:hover {
+          @apply border-white;
+        }
+      }
+
+      &:hover {
+        @apply text-white;
+      }
+    }
+  }
+}

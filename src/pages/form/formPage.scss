@@ -1,0 +1,29 @@
+.formPage {
+  @apply bg-brand-secondary pt-10 text-black-900 font-roboto pb-8;
+
+  &__container {
+    @apply mx-4;
+    @apply lg:mx-64 lg:mt-[3rem];
+  }
+
+  &__title {
+    @apply text-white font-rajdhani;
+
+    h4 {
+      @apply  text-[3.1rem] font-black;
+    }
+
+    p {
+      @apply text-base mt-3 mb-8;
+      @apply lg:mb-5;
+
+      a {
+        @apply font-bold;
+      }
+    }
+
+    &-arrowLeft {
+      @apply lg:text-3xl;
+    }
+  }
+}

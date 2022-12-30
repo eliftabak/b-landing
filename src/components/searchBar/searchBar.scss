@@ -1,0 +1,20 @@
+.searchBar {
+  @apply bg-white mb-5 p-8 rounded-3xl font-roboto border border-black-900;
+  
+  &__title {
+    @apply flex mb-2 items-baseline font-black;
+
+    &-icon {
+      @apply text-brand-primary mr-[0.38rem];
+    }
+  }
+
+  &__input {
+    @apply w-full border border-gray-900 rounded-3xl p-3;
+    @apply lg:h-12;
+
+    &:focus, &:focus-within {
+      @apply outline-none;
+    }
+  }
+}
