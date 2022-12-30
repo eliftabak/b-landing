@@ -4,16 +4,16 @@ import logo from '../../assets/image/Logomark.png';
 import login from '../../assets/icon/login.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWrench } from '@fortawesome/free-solid-svg-icons';
-import './index.scss';
+import './navbar.scss';
 
 export default function Navbar() {
   return (
     <div className='navbar'>
       <div className='navbar__right'>
-        <Link className='navbar__right-item'>
+        <Link to='/register-form' className='navbar__right-item'>
           Apply
         </Link>
-        <Link className='navbar__right-item'>
+        <Link to='/' className='navbar__right-item'>
           How it works
         </Link>
         <Link className='navbar__right-item'>
@@ -24,7 +24,9 @@ export default function Navbar() {
         </Link>
       </div>
       <div className='navbar__item'>
-        <img src={logo} alt="bumper-logo" />
+        <Link to='/'>
+          <img src={logo} alt="bumper-logo" />
+        </Link>
       </div>
       <div className='navbar__left'>
         <Link className='navbar__left-item'>

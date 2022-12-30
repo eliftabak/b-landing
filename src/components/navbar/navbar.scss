@@ -1,10 +1,10 @@
 .navbar {
-  @apply bg-brand-primary flex justify-between items-center border border-brand-secondary;
-  @apply md:rounded-[100px] md:mx-20 md:h-14;
+  @apply bg-brand-primary flex justify-center items-center py-3;
+  @apply lg:rounded-[100px] lg:mx-20 lg:h-14 lg:justify-between lg:border lg:border-brand-secondary;
 
   &__right {
     @apply hidden;
-    @apply md:block md:pl-6;
+    @apply lg:block lg:pl-6;
 
     &-item {
       @apply mr-7 pb-4;
@@ -17,7 +17,7 @@
 
   &__left {
     @apply hidden;
-    @apply md:flex md:mr-6;
+    @apply lg:flex lg:mr-6;
 
     &-item {
       @apply ml-7 flex items-center;
