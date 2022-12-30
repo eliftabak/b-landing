@@ -1,6 +1,6 @@
-//Main Feature Container Styles
+// Main Feature Container Styles
 .featureContainer {
-  @apply block font-roboto text-brand-black;
+  @apply block font-roboto text-black;
   @apply md:flex md:justify-around md:mx-20 md:mt-20;
   @apply xl:justify-between;
 
@@ -10,36 +10,51 @@
   }
 
   &__textarea {
+    @apply mx-4 mb-8;
     @apply lg:w-[39rem] lg:mr-12;
   }
 }
 
-// Feature Container Header Styles
+// Header Styles
 
 .header {
+  @apply flex mt-10;
+
   &__imageBox {
+    @apply w-32 absolute -right-5 h-[60%];
+    @apply right-32 w-40;
     @apply lg:hidden;
+
+    img {
+      @apply w-[90%];
+    }
   }
 
   &__titleBox {
+    @apply text-base;
+
     h3 {
       @apply font-extrabold;
     }
 
     p {
-      @apply text-xl mb-5 mt-2;
+      @apply text-base mb-5 mt-2 w-64;
+      @apply lg:text-xl;
     }
 
     h2  {
-      @apply text-brand-primary font-rajdhani font-black text-4xl;
-      @apply lg:text-6xl lg:mb-6;
+      @apply text-brand-primary font-rajdhani font-black text-[1.85rem] w-80;
+      @apply lg:text-6xl lg:mb-6 lg:w-auto;
     }
   }
 }
 
-// Feature Container List Styles
+// List of features Styles
 
-.list {
+.featureList {
+  @apply mt-5;
+  @apply lg:mt-0;
+
   h3 {
     @apply font-black mb-7;
   }
@@ -57,7 +72,7 @@
 
   &__number {
     div {
-      @apply bg-brand-primary h-6 w-6 text-center rounded-full border border-brand-black;
+      @apply bg-brand-primary h-6 w-6 text-center rounded-full border border-black;
     }
   }
 }

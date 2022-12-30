@@ -1,7 +1,7 @@
 import React from 'react';
 import './index.scss';
 
-export default function List() {
+export default function FeaturesList() {
   const features = [
     { 
       key:1, 
@@ -21,18 +21,18 @@ export default function List() {
   ]
 
   return (
-    <div className='list'>
+    <div className='featureList'>
       <h3>It’s as simple as:</h3>
       
       { features.map((feauture) => {
         return (
-          <div className='list__item' key={feauture.key}>
-            <div className='list__number'>
+          <div className='featureList__item' key={feauture.key}>
+            <div className='featureList__number'>
               <div>
                 {feauture.key}
               </div>
             </div>
-            <div className='list__textBox'>
+            <div className='featureList__textBox'>
               <h4>{feauture.title}</h4>
               <p>{feauture.description}</p>
             </div>
